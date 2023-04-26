@@ -1,7 +1,7 @@
 //Copyright 2021. All rights reserved
 
 import 'package:flutter/material.dart';
-import 'package:field_inc_dec_support/field_inc_dec_support_base.dart';
+import 'package:field_inc_dec_support/field_inc_dec_support.dart';
 
 void main() {
   runApp(const MyApp());
@@ -37,11 +37,26 @@ class _MyHomePageState extends State<MyHomePage> {
         title: const Text("Example of Package"),
       ),
       body: Center(
-        child: FieldIncDecSupport(
-          elevation: 2,
-          backColor: Colors.blue,
-          value: 0,
-          maxLimit: 99,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+
+            const Text(
+              "Total Qty of product",
+              style: TextStyle(
+                fontSize: 23,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+
+            FieldIncDecSupport(
+              elevation: 2,
+              backColor: Theme.of(context).primaryColor,
+              value: 0,
+              maxLimit: 99,
+              borderRadius: 12,
+            ),
+          ],
         ),
       ),
     );
