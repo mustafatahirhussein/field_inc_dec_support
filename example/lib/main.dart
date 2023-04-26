@@ -1,7 +1,6 @@
 //Copyright 2021. All rights reserved
 
 import 'package:flutter/material.dart';
-import 'package:field_inc_dec_support/field_inc_dec_support.dart';
 
 void main() {
   runApp(const MyApp());
@@ -36,14 +35,14 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: const Text("Example of Package"),
       ),
-      body: Center(
-        child: FieldIncDecSupport(
-          elevation: 2,
-          backColor: Colors.blue,
-          value: 0,
-          maxLimit: 99,
-        ),
-      ),
+      // body: Center(
+      //   child: FieldIncDecSupport(
+      //     elevation: 2,
+      //     backColor: Colors.blue,
+      //     value: 0,
+      //     maxLimit: 99,
+      //   ),
+      // ),
     );
   }
 }
