@@ -15,14 +15,14 @@ class FieldIncDecSupport extends StatefulWidget {
 
   FieldIncDecSupport(
       {Key? key,
-        this.leftIcon,
-        this.rightIcon,
-        this.borderRadius,
-        required this.elevation,
-        required this.backColor,
-        this.valColor,
-        required this.value,
-        required this.maxLimit})
+      this.leftIcon,
+      this.rightIcon,
+      this.borderRadius,
+      required this.elevation,
+      required this.backColor,
+      this.valColor,
+      required this.value,
+      required this.maxLimit})
       : super(key: key);
 
   @override
@@ -36,7 +36,7 @@ class _FieldIncDecSupportState extends State<FieldIncDecSupport> {
       elevation: widget.elevation ?? 0,
       shape: RoundedRectangleBorder(
         borderRadius:
-        BorderRadius.all(Radius.circular(widget.borderRadius ?? 20)),
+            BorderRadius.all(Radius.circular(widget.borderRadius ?? 20)),
       ),
       color: widget.backColor,
       child: Wrap(
