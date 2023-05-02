@@ -40,7 +40,6 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-
             const Text(
               "Total Qty of product",
               style: TextStyle(
@@ -48,13 +47,15 @@ class _MyHomePageState extends State<MyHomePage> {
                 fontWeight: FontWeight.w600,
               ),
             ),
-
             FieldIncDecSupport(
               elevation: 2,
-              backColor: Theme.of(context).primaryColor,
+              backColor: Colors.orange,
               value: 0,
               maxLimit: 99,
               borderRadius: 12,
+              leftIcon: const Icon(Icons.abc_outlined),
+              rightIcon: const Icon(Icons.abc_outlined),
+              valColor: const Color(0xffffffff),
             ),
           ],
         ),

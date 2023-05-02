@@ -1,73 +1,77 @@
 # field_inc_dec_support
 
-Using this Package "field_inc_dec_support", you will be able to speed up your development when it comes to add feature such as quantity box and so on.
+Using this Package "field_inc_dec_support", you will be able to speed up your development when it
+comes to add feature such as quantity box and so on.
+
+<strong><p align="start" >Some useful insights</p></strong>
+<div align="start">
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Pub](https://img.shields.io/pub/v/field_inc_dec_support)](https://pub.dev/packages/field_inc_dec_support)
+[![Twitter](https://img.shields.io/twitter/follow/MustafaTahir567?style=social)](https://twitter.com/MustafaTahir567)
+
+</div>
+
+## Technologies
+
+Package is fully created with:
+* Dart
 
 ## Preview
 
-![alt text](https://user-images.githubusercontent.com/60258980/233025802-2f1c98e3-c8c7-471f-b1e3-6180da63c90a.png)
+![alt text](https://user-images.githubusercontent.com/60258980/235610471-cc00d6a2-3118-4626-895f-b035d89c76ad.png)
 
 ## Installation & usage
 
-```shell
-flutter pub add user_social_profile
+Under the project's terminal, jot down the below command to install the suitable version, or install
+it manually.
 
-import 'package:user_social_profile/user_social_profile.dart';
+```shell
+flutter pub add field_inc_dec_support
+
+import 'package:field_inc_dec_support/field_inc_dec_support.dart';
 ```
 
 ### Code snippet
 
 ```shell
-UserSocialProfile(
-    fullName: "Mustafa Tahir",
-    icons: [
-        SocialIcon(
-        name: Platform.github,
-        link: "your_github_url",
-        iconSize: 50,
-      ),
-        SocialIcon(
-        name: Platform.linkedin,
-        link: "your_linkedin_url",
-        iconSize: 50,
-      ),
-        SocialIcon(
-        name: Platform.behance,
-        link: "your_behance_url",
-        iconSize: 50,
-      ),
-    ],
-    email: "dummyemail@gmail.com",
- ),
+FieldIncDecSupport(
+    elevation: 2,
+    backColor: Theme.of(context).primaryColor,
+    value: 0,
+    maxLimit: 99,
+),
 ```
 
 ## Optional parameters
 
-* picture
-* email
-* phone
+* leftIcon
+* rightIcon
+* borderRadius (double)
+* valColor
 
 ```shell
 # Here is the updated snippet view
 
-              UserSocialProfile(
-                fullName: "Mustafa Tahir",
-                picture: "your_image_url",
-                phone: "+921234567899",
-                icons: [
-                  SocialIcon(
-                    name: Platform.stack,
-                    link: "your_stackoverflow_url",
-                    iconSize: 50,
-                  ),
-                ],
-                email: "dummyemail@gmail.com",
-              ),
+            FieldIncDecSupport(
+              elevation: 2,
+              backColor: Colors.orange,
+              value: 0,
+              maxLimit: 99,
+              borderRadius: 12,
+              leftIcon: const Icon(Icons.abc_outlined),
+              rightIcon: const Icon(Icons.abc_outlined),
+              valColor: const Color(0xffffffff),
+            ),
 ```
 
-#### Additionally, custom styles can also be applied
+## Platform support
 
-* phoneStyle
-* emailStyle
+field_inc_dec_support currently supports:
+
+* Android
+* iOS
+* Web
 
 ## Contributing
 
@@ -77,32 +81,8 @@ If you'd like to contribute to this project, please follow these guidelines:
 * Fork the repository and make changes in a new branch.
 * Submit a pull request with your changes.
 
+Submit an issue - [Click here](https://github.com/mustafatahirhussein/field_inc_dec_support/issues)
+
 ## Buy me a coffee
+
 <a href="https://www.buymeacoffee.com/mustafatahir44" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
-
-
-
-
-
-
-## General info
-Using this Package "field_inc_dec_support", you will be able to speed up your development when it comes to add feature such as quantity box and so on.
-
-## Technologies
-Package is created with:
-* Dart
-
-## Installation & Usage
-At first import this package:
-import 'package:ready_made_calculator/ready_made_calculator.dart';
-
-```
-      return Center(
-        child: FieldIncDecSupport(
-          elevation: 2,
-          backColor: Colors.blue,
-          value: 0,
-          maxLimit: 99,
-        ),
-      ),
-```
